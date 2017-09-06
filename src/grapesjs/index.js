@@ -1,10 +1,11 @@
  module.exports = (config => {
   var c = config || {},
   defaults = require('./config/config'),
-  Editor = require('editor'),
-  PluginManager = require('plugin_manager');
-
+  Editor = require('../editor'),
+  PluginManager = require('../plugin_manager');
+  console.log(PluginManager);
   var plugins = new PluginManager();
+  console.log(plugins);
   var editors = [];
 
   return {
